@@ -1,0 +1,34 @@
+@import 'qz/chart-elements'
+
+.item-body h2
+	margin-bottom 20px
+
+.y.grid line
+	fill none
+	stroke $qz-chart-gridline
+	stroke-width 1px
+	shape-rendering crispEdges
+
+.bars rect
+	fill: $qz-blue-1
+
+.x.axis
+	.tick.zero text
+		stroke $qz-gray-3
+
+.y.grid
+	line.zero
+		stroke $qz-gray-3
+
+div.footnote
+	color: $qz-gray-2;
+	font-family: $qz-sans
+	font-size 14px
+
+@media screen and (max-width: 600px)
+	.item-body h2:first-child
+		margin-bottom 20px
+
+	.x.axis
+		.tick text
+			font-size 12px
