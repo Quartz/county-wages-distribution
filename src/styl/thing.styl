@@ -20,10 +20,25 @@
 	line.zero
 		stroke $qz-gray-3
 
-div.footnote
-	color: $qz-gray-2;
-	font-family: $qz-sans
+.footer
+	font-family $qz-sans
+	color $qz-gray-2
+	width 100%
+	padding 10px 0 0 0
 	font-size 14px
+
+	.brand
+		width 30%
+		float left
+		text-align left
+
+	.source
+		width 70%
+		float left
+		text-align right
+
+	.nowrap
+		white-space: nowrap;
 
 @media screen and (max-width: 600px)
 	.item-body h2:first-child
